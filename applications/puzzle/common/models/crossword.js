@@ -40,7 +40,6 @@ module.exports = function(Crossword) {
       Crossword.findOne(function (err, crossword) {
         
         // Part 4: Uncomment the next line to enable puzzle pod highlighting when clicking the Submit button
-        alert('fire');
         fireHit();
         if (err) handleError(err.message, cb);
         for (var j = 0; j < words.length; j++) {
